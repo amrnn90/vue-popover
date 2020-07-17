@@ -1,0 +1,25 @@
+{
+  "name": "@amrnn/vue-popover",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/js/vue-popover.umd.js",
+  "scripts": {
+    "start": "node vuepack.js dev",
+    "build": "node vuepack.js build",
+    "prepare": "npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@amrnn/vuepack": "^1.0.8",
+    "eslint-config-prettier": "^6.10.1"
+  },
+  "peerDependencies": {
+    "vue": "^2.6.11"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.4.4",
+    "vue-template-compiler": "^2.6.11"
+  }
+}
