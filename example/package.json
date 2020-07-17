@@ -1,0 +1,16 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "node vuepack.js dev",
+    "dev": "poi --serve"
+  },
+  "dependencies": {
+    "@amrnn/vue-popover": "^1.0.2",
+    "vue": "^2.6.11"
+  },
+  "devDependencies": {
+    "@amrnn/vuepack": "^1.0.8",
+    "poi": "^12.9.0",
+    "vue-template-compiler": "^2.6.11"
+  }
+}
