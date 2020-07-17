@@ -40,16 +40,6 @@ const options = {
       library: "VuePopover",
     };
 
-    config.module.rules = config.module.rules.map((r) => {
-      if (r.test.test(".css")) {
-        return {
-          test: r.test,
-          use: ["css-loader", "postcss-loader", "sass-loader"],
-        };
-      }
-      return r;
-    });
-
     return config;
   },
 };

@@ -1,6 +1,6 @@
 {
   "name": "@amrnn/vue-popover",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "dist/js/vue-popover.umd.js",
   "scripts": {
