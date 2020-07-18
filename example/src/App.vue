@@ -1,16 +1,17 @@
 <template>
-  <div>
-    <div class="mt-20">
+  <div style="1000px">
+    <div>
       <popover
         placement="top-start"
         popover-class="bg-red-500"
         :show="showPopover"
         stretch
-        strategy="fixed"
         @open="showPopover = true"
         @close="showPopover = false"
       >
-        <button class="w-64 h-64 px-4 py-2 text-white bg-indigo-500 rounded-md">
+        <button
+          class="w-64  h-64 px-4 py-2 text-white bg-indigo-500 rounded-md"
+        >
           Open Me
         </button>
 
@@ -21,13 +22,12 @@
         </template>
       </popover>
     </div>
-    <div class="mt-32">
-      <tooltip text="hola muchas" :delay="200">
-        <span class="px-4 py-2 text-white bg-gray-500 rounded-md">
-          Tooltipo
-        </span>
-      </tooltip>
-    </div>
+    <div class="mt-32"></div>
+    <tooltip text="hola muchas" :delay="200">
+      <span class="inline-block px-4 py-2 text-white bg-gray-500 rounded-md">
+        Tooltipo
+      </span>
+    </tooltip>
 
     <div class="mt-32">
       <popover
@@ -54,13 +54,30 @@
         I am a detached reference
       </div>
     </div>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+      dignissimos aliquam cumque itaque eaque illo temporibus esse accusantium
+      distinctio. Excepturi corporis consequuntur repellat asperiores facilis a
+      modi reprehenderit placeat sit itaque ex voluptatibus eveniet accusantium
+      veritatis omnis laboriosam, tenetur necessitatibus at libero, et illum
+      dignissimos ad eius nobis! Veniam quaerat, deserunt voluptatum rerum
+      minima recusandae expedita assumenda dolorem laborum maiores? Praesentium
+      minima blanditiis suscipit quod hic atque minus neque quas voluptatibus
+      odio accusamus consequuntur ducimus iure, laudantium officia reprehenderit
+      explicabo quaerat quibusdam, nulla ullam sed vitae culpa dolores. Veniam,
+      consectetur animi. Odit accusantium distinctio excepturi quia sint eos
+      quidem placeat!
+    </p>
   </div>
 </template>
 
 <script>
-// import { Popover, Tooltip } from "../../src";
-import { Popover, Tooltip } from "@amrnn/vue-popover";
-import "@amrnn/vue-popover/dist/css/styles.css";
+// import { Popover, Tooltip } from "../../";
+import Popover from "../../src/Popover.vue";
+import Tooltip from "../../src/Tooltip.vue";
+// import { Popover, Tooltip } from "@amrnn/vue-popover";
+// import "@amrnn/vue-popover/dist/css/styles.css";
 
 export default {
   name: "App",

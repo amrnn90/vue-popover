@@ -146,6 +146,10 @@ export default {
       default: "absolute",
       validator: (val) => ["absolute", "fixed"].includes(val),
     },
+    noFlip: {
+      type: Boolean,
+      default: false,
+    },
     flipPadding: {
       type: [Number, Object],
       default: () => 0,
@@ -178,7 +182,7 @@ export default {
       const modifiers = [
         {
           name: "flip",
-          enabled: true,
+          enabled: !this.noFlip,
           options: {
             padding: this.flipPadding,
             boundary: this.boundary,

@@ -1,7 +1,6 @@
 {
   "private": true,
   "scripts": {
-    "start": "node vuepack.js dev",
     "dev": "poi --serve"
   },
   "dependencies": {

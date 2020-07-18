@@ -18,7 +18,7 @@
 </template>
 
 <script>
-import Popover from "./Popover";
+import Popover from "./Popover.vue";
 
 export default {
   components: { "v-popover": Popover },
